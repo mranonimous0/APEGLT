@@ -22,7 +22,7 @@ To run the code type `stack exec -- APEGlt [-a|-d] <lang-name> <input-file>`. Th
 * The *`a`* option will make the tool inform only if the input file was accepted or rejected. 
 * The *`d`* option prints the type context after the execution. The normal behavior fo the tool is to parse the file, print the derivation tree built and inform if it was accepted or rejected. 
 
-Sample input tests for MicroSugar language can be found st the inputSamples/muSugar folder. The following example show the result of run the MicroSugar parser on the SingleCMD input file.
+Sample input tests for MicroSugar language can be found st the inputSamples/muSugar folder. The following example show the result of run the MicroSugar parser on the SimplleCMD input file.
 
 
 ```
