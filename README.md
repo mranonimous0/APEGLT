@@ -18,7 +18,28 @@ implementation.
 
 To run the code type `stack exec -- APEGlt [-a|-d] <lang-name> <input-file>`. The input name is name of the sample grammar of the input. 
 
+* A list of the available test languages can be obtained with `stack exec -- APEGlt -l`
+* The *`a`* option will make the tool inform only if the input file was accepted or rejected. 
+* The *`d`* option prints the type context after the execution. The normal behavior fo the tool is to parse the file, print the derivation tree built and inform if it was accepted or rejected. 
 
-* The *`a`* option will make the tool inform only if the input file was
-accepted ou rejected. 
-* The *`d`* option prints the type context after the execution. The normal beahviour fo the tool is to parse the file, print the deverivation tree built and inform if it was accepted or rejected. 
+Sample input tests for MicroSugar language can be found st the inputSamples/muSugar folder. To run one of them you just need to 
+```console
+[APEGLitleToy-Anymous]$ stack exec -- APEGlt muSugar inputSamples/muSugar/SimpleCMD.txt 
+prog
+├─ block
+│  ├─ {
+│  ├─ stmt
+│  │  ├─ \n
+│  │  ├─  
+│  │  ├─  
+│  │  ├─ read(
+│  │  ├─ x
+│  │  ├─ )
+│  │  ├─ ;
+│  ├─ \n
+│  ├─ }
+├─ \n
+
+ACCEPTED
+```
+
